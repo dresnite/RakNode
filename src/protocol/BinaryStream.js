@@ -339,6 +339,10 @@ class BinaryStream {
         this.offset = 0;
     }
 
+    hasOffsetReachedEnd() {
+        return typeof this.buffer[this.offset] !== "undefined";
+    }
+
 }
 
 module.exports = BinaryStream;

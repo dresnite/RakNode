@@ -85,3 +85,5 @@ class AcknowledgePacket extends Packet {
     }
 
 }
+
+module.exports = AcknowledgePacket;

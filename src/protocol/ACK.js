@@ -14,3 +14,5 @@ class ACK extends AcknowledgePacket {
     }
 
 }
+
+module.exports = ACK;

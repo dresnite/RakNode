@@ -29,3 +29,5 @@ class ConnectedPong extends Packet {
     }
 
 }
+
+module.exports = ConnectedPong;

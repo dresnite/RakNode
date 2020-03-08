@@ -25,3 +25,5 @@ class AdvertiseSystem extends Packet {
     }
 
 }
+
+module.exports = AdvertiseSystem;

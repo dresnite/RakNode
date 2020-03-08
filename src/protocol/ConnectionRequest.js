@@ -8,7 +8,7 @@
 const Packet = require("./Packet");
 const PacketIds = require("./PacketIds");
 
-class ConnectedRequest extends Packet {
+class ConnectionRequest extends Packet {
 
     clientId;
 
@@ -33,3 +33,5 @@ class ConnectedRequest extends Packet {
     }
 
 }
+
+module.exports = ConnectionRequest;

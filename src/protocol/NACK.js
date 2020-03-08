@@ -14,3 +14,5 @@ class NACK extends AcknowledgePacket {
     }
 
 }
+
+module.exports = NACK;

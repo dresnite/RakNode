@@ -58,3 +58,5 @@ class ConnectionRequestAccepted extends Packet {
     }
 
 }
+
+module.exports = ConnectionRequestAccepted;

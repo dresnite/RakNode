@@ -25,3 +25,5 @@ class ConnectedPing extends Packet {
     }
 
 }
+
+module.exports = ConnectedPing;

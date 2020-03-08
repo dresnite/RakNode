@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "dgram": "^1.0.1",
+    "locutus": "^2.0.11"
+  }
+}

@@ -5,7 +5,7 @@
  * (at your option) any later version.
  */
 
-const BinaryStream = require("../utils/BinaryStream");
+const BinaryStream = require("./BinaryStream");
 
 class Packet extends BinaryStream {
 

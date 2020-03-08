@@ -5,7 +5,7 @@
  * (at your option) any later version.
  */
 
-const InternetAddress = require("./InternetAddress");
+const InternetAddress = require("../utils/InternetAddress");
 const Network = require("locutus/php/network");
 
 const MAX_UINT32 = 0xFFFFFFFF;

@@ -7,3 +7,11 @@ RakNode is a basic [RakNet](https://github.com/facebookarchive/RakNet) implement
 ### Not ready!
 
 This project is still under heavy development. Do not use unless you know what you are doing.
+
+### Inspiration
+
+RakNode is mostly based on the open source library [RakLib](https://github.com/pmmp/RakLib) by [PMMP](https://github.com/pmmp).
+
+### Dependencies
+
+- [locutus](https://github.com/kvz/locutus) by Kevin van Zonneveld.

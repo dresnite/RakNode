@@ -29,7 +29,7 @@ class PacketReliability {
     }
 
     static isSequencedOrOrdered(reliability) {
-        return this.isSequenced(reliability) || this.isOrdered(reliability);
+        return reliability === this.RELIABLE_SEQUENCED || reliability === this.UNRELIABLE_SEQUENCED || reliability === this.RELIABLE_ORDERED || reliability === this.RELIABLE_ORDERED_WITH_ACK_RECEIPT;
     }
     
 }

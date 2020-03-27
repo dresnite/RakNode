@@ -10,7 +10,7 @@ This project is still under heavy development. Do not use unless you know what y
 
 ### Inspiration
 
-RakNode is mostly based on the open source library [RakLib](https://github.com/pmmp/RakLib) by [PMMP](https://github.com/pmmp).
+RakNode is mostly based on the open source library [RakLib](https://github.com/pmmp/RakLib) by [PMMP](https://github.com/pmmp) [PocketNode's RakNet](https://github.com/PocketNode/RakNet).
 
 ### Dependencies
 

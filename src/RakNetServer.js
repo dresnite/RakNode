@@ -7,27 +7,31 @@
 
 const SessionManager = require("./session/SessionManager");
 const InternetAddress = require("./utils/InternetAddress");
+
 const dgram = require("dgram");
 
 class RakNetServer {
+    /** @type {InternetAddress} */
+    _address;
+    /** @type {SessionManager} */
+    _sessionManager = new SessionManager();
 
     constructor(address) {
-        this.address = address;
-        this.sessionManager = new SessionManager();
+        this._address = address;
         this.start();
     }
 
     start() {
-        this.socket = dgram.createSocket("udp4");
-        this.socket.bind(this.address.port, this.address.ip);
+        this._socket = dgram.createSocket("udp4");
+        this._socket.bind(this._address.port, this._address.ip);
 
-        this.socket.on("message", function(payload, remoteInfo) {
-            this.sessionManager.handleMessage(payload, new InternetAddress(remoteInfo.ip, remoteInfo.port));
+        this._socket.on("message", function(payload, remoteInfo) {
+            this._sessionManager.handleMessage(payload, new InternetAddress(remoteInfo.ip, remoteInfo.port, 4));
         });
     }
 
     close() {
-        this.socket.close();
+        this._socket.close();
     }
 
 }

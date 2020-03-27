@@ -28,7 +28,7 @@ class SessionManager {
 
     /**
      * @param message
-     * @param {InternetAddress} address
+     * @param address {InternetAddress}
      */
     handleMessage(message, address) {
         let sessionIndex = address.toString();
